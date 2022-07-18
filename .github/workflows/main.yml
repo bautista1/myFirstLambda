@@ -25,7 +25,7 @@ jobs:
         run:
           if ["$aws-access-key-id" == "AKIAT6PXEOIZP7KGVU5X"]
           then
-            echo "git hola alberth"
+            echo  ${{ secrets.AWS_ACCESS_KEY_ID }}
           fi
       - name: npm install
         env:
