@@ -22,11 +22,6 @@ jobs:
         env:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run:
-          if ["$aws-access-key-id" == "AKIAT6PXEOIZP7KGVU5X"]
-          then
-            echo "git hola alberth"
-          fi
       - name: npm install
         env:
           CI: true
